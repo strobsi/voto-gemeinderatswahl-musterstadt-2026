@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gemeinderatswahl Musterstadt 2026 — VOTO</title>
+  <meta name="description" content="Gemeinderatswahl Musterstadt 2026">
+  <meta name="generator" content="VOTO Election Export">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+:root{--primary:#db1fc2;--primary-fg:#fff;--bg:#fafafa;--surface:#fff;--card-bg:#f4f4f5;--card-border:#d4d4d8;--text:#18181b;--text-muted:#71717a;--border:#e4e4e7;--accent:#f4f4f5;--radius:.625rem}
+@media(prefers-color-scheme:dark){:root{--bg:#09090b;--surface:#18181b;--card-bg:#1c1c20;--card-border:#3f3f46;--text:#fafafa;--text-muted:#a1a1aa;--border:#27272a;--accent:#27272a}}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;-webkit-font-smoothing:antialiased;min-height:100vh;overflow-x:hidden}
+
+/* Header – matches bg-primary text-white h-14 */
+#header{background:var(--primary);color:var(--primary-fg);height:3.5rem;display:flex;align-items:center;position:sticky;top:0;z-index:50}
+.header-inner{max-width:64rem;margin:0 auto;width:100%;padding:0 1rem;display:flex;align-items:center;justify-content:center}
+.header-title{font-weight:700;font-size:1.125rem;text-align:center}
+
+/* Views */
+.view{display:none}.view.active{display:block}
+
+/* ── Start Page ── */
+.cover-image-wrapper{position:relative;width:100%;height:16rem;overflow:hidden;background:var(--accent)}
+@media(min-width:768px){.cover-image-wrapper{height:24rem}}
+.cover-image{width:100%;height:100%;object-fit:cover}
+.start-content{max-width:64rem;margin:0 auto;padding:1rem 1rem 6rem}
+@media(min-width:768px){.start-content{padding:2rem 2rem 6rem}}
+.start-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,3fr);gap:1rem}
+@media(min-width:768px){.start-grid{grid-template-columns:repeat(12,minmax(0,1fr))}}
+.start-date{display:flex;flex-direction:column;line-height:1.2}
+@media(min-width:768px){.start-date{grid-column:span 2}}
+.start-date .day{font-weight:700;font-size:1.25rem}
+@media(min-width:768px){.start-date .day{font-size:1.5rem}}
+.start-title-block{display:flex;flex-direction:column;line-height:1.2;justify-content:center}
+@media(min-width:768px){.start-title-block{grid-column:span 5}}
+.start-title{font-size:1.25rem;font-weight:700}
+@media(min-width:768px){.start-title{font-size:1.5rem}}
+.start-subtitle{font-size:1rem}
+@media(min-width:768px){.start-subtitle{font-size:1.25rem}}
+.start-button-area{grid-column:1/-1;margin-top:.5rem}
+@media(min-width:768px){.start-button-area{grid-column:8/13;margin-top:0}}
+.btn-primary{display:block;width:100%;padding:.75rem 1.5rem;background:var(--primary);color:var(--primary-fg);border:none;border-radius:var(--radius);font-size:1.125rem;font-weight:600;cursor:pointer;transition:opacity .2s,transform .1s;font-family:inherit}
+.btn-primary:hover{opacity:.9}.btn-primary:active{transform:scale(.97)}
+.start-description{grid-column:1/-1;margin-top:1.5rem}
+@media(min-width:768px){.start-description{margin-top:3rem}}
+.start-description h3{font-weight:800;font-size:1.875rem;margin-bottom:1.5rem}
+.start-description .prose{max-width:100%;line-height:1.7;color:var(--text)}
+.start-description .prose p{margin-bottom:1rem}
+.start-description .prose a{color:var(--primary);text-decoration:underline}
+.start-stats{grid-column:1/-1;display:flex;gap:1rem;flex-wrap:wrap;margin-top:1.5rem}
+.stat-pill{background:var(--card-bg);border:1px solid var(--card-border);border-radius:999px;padding:.5rem 1.25rem;font-size:.875rem;font-weight:500;display:flex;align-items:center;gap:.5rem}
+.stat-pill strong{color:var(--primary);font-weight:700}
+.sponsors-section{grid-column:1/-1;margin-top:2rem}
+.sponsors-title{font-weight:700;font-size:1.25rem;margin-bottom:1rem}
+.sponsors-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:1.5rem}
+.sponsor-card{text-decoration:none;color:var(--text)}
+.sponsor-card img{width:100%;border-radius:var(--radius);border:1px solid var(--border)}
+.sponsor-name{display:block;font-size:1rem;text-decoration:underline;margin-bottom:.75rem}
+
+/* ── Theses View ── */
+.theses-container{max-width:48rem;margin:0 auto;padding:0 .5rem;min-height:calc(100vh - 3.5rem);display:flex;flex-direction:column}
+.theses-progress{padding:1rem .5rem 0;text-align:center;font-size:.875rem;color:var(--text-muted);font-weight:500}
+.thesis-card{background:var(--card-bg);border:1px solid var(--card-border);border-radius:var(--radius);padding:1.5rem;margin:1rem;flex:1;display:flex;flex-direction:column;box-shadow:none}
+.thesis-category{color:var(--text-muted);font-size:.875rem;line-height:1.6;margin-bottom:.5rem}
+.thesis-text{font-size:1.25rem;font-weight:600;line-height:1.5;flex:1}
+@media(min-width:768px){.thesis-text{font-size:1.375rem}}
+.thesis-rating-buttons{display:grid;gap:.5rem;margin-top:1.5rem}
+.thesis-rating-buttons.decisions-3{grid-template-columns:repeat(3,1fr)}
+.thesis-rating-buttons.decisions-5{grid-template-columns:repeat(5,1fr)}
+.rating-btn{padding:.75rem .5rem;border-radius:var(--radius);border:2px solid var(--border);background:var(--surface);color:var(--text);font-size:.8rem;font-weight:600;cursor:pointer;transition:all .15s ease;font-family:inherit;text-align:center;line-height:1.3}
+@media(min-width:768px){.rating-btn{font-size:.875rem}}
+.rating-btn:hover{border-color:var(--primary);background:color-mix(in srgb,var(--primary) 8%,var(--surface))}
+.rating-btn.active{background:var(--primary);color:var(--primary-fg);border-color:var(--primary);transform:scale(1.03);box-shadow:0 2px 8px rgba(0,0,0,.15)}
+.thesis-skip{display:block;margin:.5rem auto 1rem;padding:.5rem 1.5rem;background:none;border:none;color:var(--text-muted);font-size:.875rem;cursor:pointer;font-family:inherit;text-decoration:underline}
+.thesis-skip:hover{color:var(--text)}
+.thesis-nav{display:flex;justify-content:center;gap:1rem;padding:.5rem 1rem 1.5rem}
+.thesis-nav button{padding:.625rem 1.5rem;border-radius:var(--radius);border:1px solid var(--border);background:var(--surface);color:var(--text);font-size:.875rem;font-weight:500;cursor:pointer;font-family:inherit;transition:all .15s}
+.thesis-nav button:hover{background:var(--accent)}
+.thesis-nav button:disabled{opacity:.3;cursor:not-allowed}
+.thesis-nav button.btn-finish{background:var(--primary);color:var(--primary-fg);border-color:var(--primary)}
+.progress-dots{display:flex;justify-content:center;gap:.35rem;padding:.75rem 0;flex-wrap:wrap;max-width:20rem;margin:0 auto}
+.progress-dot{width:.5rem;height:.5rem;border-radius:50%;background:var(--border);transition:all .2s}
+.progress-dot.answered{background:var(--primary)}
+.progress-dot.current{background:var(--primary);transform:scale(1.4);box-shadow:0 0 0 2px var(--bg),0 0 0 3px var(--primary)}
+.progress-dot.skipped{background:var(--text-muted);opacity:.4}
+
+/* ── Result View ── */
+.result-container{max-width:48rem;margin:0 auto;padding:.5rem .5rem 5rem}
+.result-tabs{display:flex;border-bottom:1px solid var(--border);position:sticky;top:3.5rem;background:var(--bg);z-index:40}
+.result-tab{flex:1;padding:1rem;text-align:center;font-size:1.25rem;font-weight:500;cursor:pointer;border:none;background:none;color:var(--text);opacity:.6;transition:all .2s;font-family:inherit;position:relative}
+.result-tab.active{font-weight:700;opacity:1}
+.result-tab:not(.active){box-shadow:inset 0 -4px 4px rgba(0,0,0,.05)}
+.sub-tabs{display:flex;border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;margin:1rem .5rem}
+.sub-tab{flex:1;padding:.625rem;text-align:center;font-size:1rem;font-weight:500;cursor:pointer;border:none;background:var(--surface);color:var(--text);opacity:.6;transition:all .2s;font-family:inherit}
+.sub-tab.active{background:var(--accent);font-weight:600;opacity:1}
+.result-explanation{padding:1rem .5rem 0;font-size:.875rem;font-weight:500}
+.entity-list{margin-top:.5rem}
+.entity-row{display:flex;align-items:center;gap:1rem;padding:1rem .5rem;border-bottom:1px solid var(--border);cursor:default;transition:background .15s}
+.entity-row:hover{background:var(--accent)}
+.entity-avatar{width:4rem;height:4rem;border-radius:50%;object-fit:cover;border:1px solid var(--border);background:var(--accent);flex-shrink:0}
+.entity-info{flex:1;min-width:0}
+.entity-name{font-weight:700;font-size:1rem;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+@media(min-width:768px){.entity-name{font-size:1.125rem}}
+.entity-meta{font-size:.75rem;color:var(--text-muted);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+@media(min-width:768px){.entity-meta{font-size:.875rem}}
+.match-bar-wrapper{position:relative;margin-top:.5rem}
+.match-bar-track{height:1rem;border-radius:.25rem;overflow:hidden;position:relative}
+.match-bar-bg{position:absolute;inset:0;opacity:.2;border-radius:.25rem}
+.match-bar-fill{height:100%;border-radius:.25rem;transition:width .5s ease;position:relative}
+.match-bar-text{position:absolute;top:0;bottom:0;display:flex;align-items:center;font-size:.75rem;font-weight:600;padding:0 .25rem}
+
+/* Theses result tab */
+.theses-result-container{max-width:48rem;margin:0 auto;padding:.5rem .5rem 5rem}
+.theses-result-header{padding:.5rem 0 1rem}.theses-result-header p{font-weight:700;margin-bottom:.25rem}.theses-result-header .subtext{font-size:.875rem;font-weight:400}
+.thesis-result-card{background:var(--card-bg);border:1px solid var(--card-border);border-radius:var(--radius);padding:1rem 1.25rem;margin-bottom:.75rem}
+.thesis-result-top{display:flex;justify-content:space-between;color:var(--text-muted);font-size:.875rem;margin-bottom:.5rem}
+.thesis-result-text{font-size:1.125rem;font-weight:600;line-height:1.5;margin-bottom:1rem}
+.rating-grid{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:.5rem .75rem;align-items:center}
+.rating-label{justify-self:end;font-size:.875rem;font-weight:500;text-align:right;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:100%}
+.rating-label-colored{padding:.125rem .5rem;border-radius:.25rem;font-size:.8rem}
+.rating-squares{display:flex;gap:.125rem}
+.rating-square{width:1.5rem;height:1.5rem;border-radius:.2rem;display:flex;align-items:center;justify-content:center;font-size:.7rem;font-weight:700}
+@media(min-width:768px){.rating-square{width:2rem;height:2rem;font-size:.8rem}}
+.rating-action{font-size:.8rem}
+.explanation-toggle{color:var(--primary);cursor:pointer;text-decoration:none;font-size:.8rem;display:inline-flex;align-items:center;gap:.25rem;background:none;border:none;font-family:inherit;padding:0}
+.explanation-toggle:hover{text-decoration:underline}
+.explanation-text{display:none;grid-column:1/-1;padding:.5rem .75rem;border-radius:.25rem;font-size:.875rem;margin:.125rem 0}
+.explanation-text.open{display:block}
+.color-legend{display:flex;flex-wrap:wrap;gap:.75rem;padding:1rem .5rem;margin-top:.5rem}
+.legend-item{display:flex;align-items:center;gap:.375rem;font-size:.8rem}
+.legend-swatch{width:.875rem;height:.875rem;border-radius:.2rem;border:1px solid var(--border)}
+.voto-footer{text-align:center;padding:2rem 1rem;color:var(--text-muted);font-size:.8rem;border-top:1px solid var(--border)}
+.voto-footer a{color:var(--primary)}
+@keyframes fadeUp{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.animate-in{animation:fadeUp .35s ease forwards}
+  </style>
+</head>
+<body>
+  <div id="app">
+    <header id="header">
+      <div class="header-inner">
+        <div class="header-title">Gemeinderatswahl Musterstadt 2026</div>
+      </div>
+    </header>
+    <main id="view-start" class="view active">
+      <div class="cover-image-wrapper"></div>
+      <div class="start-content">
+        <div class="start-grid">
+          <div class="start-date">
+            <div class="day">01/02</div>
+            <div>2026</div>
+          </div>
+          <div class="start-title-block">
+            <div class="start-title">Gemeinderatswahl Musterstadt 2026</div>
+            <div class="start-subtitle"></div>
+          </div>
+          <div class="start-button-area">
+            <button class="btn-primary" onclick="startTheses()">Start VOTO</button>
+          </div>
+          <div class="start-stats">
+            <div class="stat-pill"><strong>10</strong> Theses</div>
+            <div class="stat-pill"><strong>6</strong> Parties</div>
+            <div class="stat-pill"><strong>19</strong> Candidates</div>
+          </div>
+          <div class="start-description">
+            <h3>Information</h3>
+            <div class="prose"><p></p></div>
+          </div>
+          
+      <div class="sponsors-section">
+        <div class="sponsors-title">Sponsors</div>
+        <div class="sponsors-grid">
+          <a class="sponsor-card" href="https://sparkasse-musterstadt.example.de" target="_blank" rel="noopener"><span class="sponsor-name">Sparkasse Musterstadt</span></a>
+<a class="sponsor-card" href="https://stadtwerke-musterstadt.example.de" target="_blank" rel="noopener"><span class="sponsor-name">Stadtwerke Musterstadt</span></a>
+<a class="sponsor-card" href="https://musterstadt-kurier.example.de" target="_blank" rel="noopener"><span class="sponsor-name">Musterstadt Kurier</span></a>
+        </div>
+      </div>
+        </div>
+      </div>
+      <div class="voto-footer">Generated by <a href="https://voto.vote" target="_blank" rel="noopener">VOTO</a> on 2026-03-02</div></main>
+    <main id="view-theses" class="view">
+      <div class="theses-container">
+        <div class="theses-progress"><span id="thesis-counter">1 / 10</span></div>
+        <div class="progress-dots" id="progress-dots">
+          <div class="progress-dot current" data-idx="0"></div><div class="progress-dot" data-idx="1"></div><div class="progress-dot" data-idx="2"></div><div class="progress-dot" data-idx="3"></div><div class="progress-dot" data-idx="4"></div><div class="progress-dot" data-idx="5"></div><div class="progress-dot" data-idx="6"></div><div class="progress-dot" data-idx="7"></div><div class="progress-dot" data-idx="8"></div><div class="progress-dot" data-idx="9"></div>
+        </div>
+        <div id="thesis-carousel">
+          
+          <div class="thesis-card" data-thesis-idx="0" style="display:flex">
+            <div class="thesis-category">Verkehr &amp; Mobilität</div>
+            <div class="thesis-text">Die Stadt sollte den Autoverkehr in der Innenstadt bis 2030 um die Hälfte reduzieren und stattdessen den ÖPNV und Radwege massiv ausbauen.</div>
+            <div class="thesis-rating-buttons decisions-5">
+              <button class="rating-btn" data-value="1" onclick="rateThesis(9,1,this)">Strongly Disagree</button>
+              <button class="rating-btn" data-value="2" onclick="rateThesis(9,2,this)">Disagree</button>
+              <button class="rating-btn" data-value="3" onclick="rateThesis(9,3,this)">Neutral</button>
+              <button class="rating-btn" data-value="4" onclick="rateThesis(9,4,this)">Agree</button>
+              <button class="rating-btn" data-value="5" onclick="rateThesis(9,5,this)">Strongly Agree</button>
+            </div>
+          </div>
+          <div class="thesis-card" data-thesis-idx="1" style="display:none">
+            <div class="thesis-category">Wohnen &amp; Bauen</div>
+            <div class="thesis-text">Die Gemeinde sollte mindestens 30% aller Neubauflächen für sozialen Wohnungsbau reservieren.</div>
+            <div class="thesis-rating-buttons decisions-5">
+              <button class="rating-btn" data-value="1" onclick="rateThesis(10,1,this)">Strongly Disagree</button>
+              <button class="rating-btn" data-value="2" onclick="rateThesis(10,2,this)">Disagree</button>
+              <button class="rating-btn" data-value="3" onclick="rateThesis(10,3,this)">Neutral</button>
+              <button class="rating-btn" data-value="4" onclick="rateThesis(10,4,this)">Agree</button>
+              <button class="rating-btn" data-value="5" onclick="rateThesis(10,5,this)">Strongly Agree</button>
+            </div>
+          </div>
+          <div class="thesis-card" data-thesis-idx="2" style="display:none">
+            <div class="thesis-category">Umwelt &amp; Klima</div>
+            <div class="thesis-text">Die Stadt sollte bis 2035 klimaneutral werden und dafür ein verbindliches CO₂-Budget einführen.</div>
+            <div class="thesis-rating-buttons decisions-5">
+              <button class="rating-btn" data-value="1" onclick="rateThesis(11,1,this)">Strongly Disagree</button>
+              <button class="rating-btn" data-value="2" onclick="rateThesis(11,2,this)">Disagree</button>
+              <button class="rating-btn" data-value="3" onclick="rateThesis(11,3,this)">Neutral</button>
+              <button class="rating-btn" data-value="4" onclick="rateThesis(11,4,this)">Agree</button>
+              <button class="rating-btn" data-value="5" onclick="rateThesis(11,5,this)">Strongly Agree</button>
+            </div>
+          </div>
+          <div class="thesis-card" data-thesis-idx="3" style="display:none">
+            <div class="thesis-category">Digitalisierung</div>
+            <div class="thesis-text">Alle Verwaltungsdienstleistungen sollen bis 2028 vollständig digital verfügbar sein.</div>
+            <div class="thesis-rating-buttons decisions-5">
+              <button class="rating-btn" data-value="1" onclick="rateThesis(12,1,this)">Strongly Disagree</button>
+              <button class="rating-btn" data-value="2" onclick="rateThesis(12,2,this)">Disagree</button>
+              <button class="rating-btn" data-value="3" onclick="rateThesis(12,3,this)">Neutral</button>
+              <button class="rating-btn" data-value="4" onclick="rateThesis(12,4,this)">Agree</button>
+              <button class="rating-btn" data-value="5" onclick="rateThesis(12,5,this)">Strongly Agree</button>
+            </div>
+          </div>
+          <div class="thesis-card" data-thesis-idx="4" style="display:none">
+            <div class="thesis-category">Bildung &amp; Familie</div>
+            <div class="thesis-text">Es soll ein Rechtsanspruch auf einen Kitaplatz ab dem ersten Lebensjahr mit maximal 15 Minuten Anfahrtszeit eingeführt werden.</div>
+            <div class="thesis-rating-buttons decisions-5">
+              <button class="rating-btn" data-value="1" onclick="rateThesis(13,1,this)">Strongly Disagree</button>
+              <button class="rating-btn" data-value="2" onclick="rateThesis(13,2,this)">Disagree</button>
+              <button class="rating-btn" data-value="3" onclick="rateThesis(13,3,this)">Neutral</button>
+              <button class="rating-btn" data-value="4" onclick="rateThesis(13,4,this)">Agree</button>
+              <button class="rating-btn" data-value="5" onclick="rateThesis(13,5,this)">Strongly Agree</button>
+            </div>
+          </div>
+          <div class="thesis-card" data-thesis-idx="5" style="display:none">
+            <div class="thesis-category">Wirtschaft &amp; Finanzen</div>
+            <div class="thesis-text">Die Gewerbesteuer sollte gesenkt werden, um mehr Unternehmen in die Stadt zu locken.</div>
+            <div class="thesis-rating-buttons decisions-5">
+              <button class="rating-btn" data-value="1" onclick="rateThesis(14,1,this)">Strongly Disagree</button>
+              <button class="rating-btn" data-value="2" onclick="rateThesis(14,2,this)">Disagree</button>
+              <button class="rating-btn" data-value="3" onclick="rateThesis(14,3,this)">Neutral</button>
+              <button class="rating-btn" data-value="4" onclick="rateThesis(14,4,this)">Agree</button>
+              <button class="rating-btn" data-value="5" onclick="rateThesis(14,5,this)">Strongly Agree</button>
+            </div>
+          </div>
+          <div class="thesis-card" data-thesis-idx="6" style="display:none">
+            <div class="thesis-category">Demokratie &amp; Teilhabe</div>
+            <div class="thesis-text">Bei allen Bauprojekten über 5 Millionen Euro sollte ein verpflichtender Bürgerentscheid durchgeführt werden.</div>
+            <div class="thesis-rating-buttons decisions-5">
+              <button class="rating-btn" data-value="1" onclick="rateThesis(15,1,this)">Strongly Disagree</button>
+              <button class="rating-btn" data-value="2" onclick="rateThesis(15,2,this)">Disagree</button>
+              <button class="rating-btn" data-value="3" onclick="rateThesis(15,3,this)">Neutral</button>
+              <button class="rating-btn" data-value="4" onclick="rateThesis(15,4,this)">Agree</button>
+              <button class="rating-btn" data-value="5" onclick="rateThesis(15,5,this)">Strongly Agree</button>
+            </div>
+          </div>
+          <div class="thesis-card" data-thesis-idx="7" style="display:none">
+            <div class="thesis-category">Sicherheit &amp; Ordnung</div>
+            <div class="thesis-text">Die Anzahl der Ordnungskräfte im Stadtgebiet sollte verdoppelt und eine Videoüberwachung an öffentlichen Plätzen eingeführt werden.</div>
+            <div class="thesis-rating-buttons decisions-5">
+              <button class="rating-btn" data-value="1" onclick="rateThesis(16,1,this)">Strongly Disagree</button>
+              <button class="rating-btn" data-value="2" onclick="rateThesis(16,2,this)">Disagree</button>
+              <button class="rating-btn" data-value="3" onclick="rateThesis(16,3,this)">Neutral</button>
+              <button class="rating-btn" data-value="4" onclick="rateThesis(16,4,this)">Agree</button>
+              <button class="rating-btn" data-value="5" onclick="rateThesis(16,5,this)">Strongly Agree</button>
+            </div>
+          </div>
+          <div class="thesis-card" data-thesis-idx="8" style="display:none">
+            <div class="thesis-category">Kultur &amp; Freizeit</div>
+            <div class="thesis-text">Der städtische Kulturetat sollte um 50% erhöht werden, insbesondere für freie Kulturschaffende und Jugendprojekte.</div>
+            <div class="thesis-rating-buttons decisions-5">
+              <button class="rating-btn" data-value="1" onclick="rateThesis(17,1,this)">Strongly Disagree</button>
+              <button class="rating-btn" data-value="2" onclick="rateThesis(17,2,this)">Disagree</button>
+              <button class="rating-btn" data-value="3" onclick="rateThesis(17,3,this)">Neutral</button>
+              <button class="rating-btn" data-value="4" onclick="rateThesis(17,4,this)">Agree</button>
+              <button class="rating-btn" data-value="5" onclick="rateThesis(17,5,this)">Strongly Agree</button>
+            </div>
+          </div>
+          <div class="thesis-card" data-thesis-idx="9" style="display:none">
+            <div class="thesis-category">Energie</div>
+            <div class="thesis-text">Die Stadtwerke sollen bis 2030 zu 100% auf erneuerbare Energien umstellen und Bürgerbeteiligungsmodelle für Solaranlagen anbieten.</div>
+            <div class="thesis-rating-buttons decisions-5">
+              <button class="rating-btn" data-value="1" onclick="rateThesis(18,1,this)">Strongly Disagree</button>
+              <button class="rating-btn" data-value="2" onclick="rateThesis(18,2,this)">Disagree</button>
+              <button class="rating-btn" data-value="3" onclick="rateThesis(18,3,this)">Neutral</button>
+              <button class="rating-btn" data-value="4" onclick="rateThesis(18,4,this)">Agree</button>
+              <button class="rating-btn" data-value="5" onclick="rateThesis(18,5,this)">Strongly Agree</button>
+            </div>
+          </div>
+        </div>
+        <button class="thesis-skip" onclick="skipThesis()">Skip this thesis</button>
+        <div class="thesis-nav">
+          <button id="btn-prev" onclick="prevThesis()" disabled>&larr; Previous</button>
+          <button id="btn-next" onclick="nextThesis()">Next &rarr;</button>
+          <button id="btn-finish" class="btn-finish" onclick="showResults()" style="display:none">See Results &rarr;</button>
+        </div>
+      </div></main>
+    <main id="view-result" class="view">
+      <div class="result-tabs">
+        <button class="result-tab active" data-tab="result" onclick="switchResultTab('result')">Result</button>
+        <button class="result-tab" data-tab="theses" onclick="switchResultTab('theses')">Theses</button>
+      </div>
+      <div id="result-tab-result" class="result-container">
+        <p class="result-explanation" id="result-explanation"></p>
+        
+        <div class="sub-tabs">
+          <button class="sub-tab active" data-subtab="candidates" onclick="switchSubTab('candidates')">Candidates</button>
+          <button class="sub-tab" data-subtab="parties" onclick="switchSubTab('parties')">Parties</button>
+        </div>
+        <div id="entity-list-candidates" class="entity-list" style="display:block"></div>
+        <div id="entity-list-parties" class="entity-list" style="display:none"></div>
+      </div>
+      <div id="result-tab-theses" class="theses-result-container" style="display:none">
+        <div class="theses-result-header">
+          <p>Compare your positions with the parties</p>
+          <span class="subtext">Click on <strong>Details</strong> to see an entity&#039;s reasoning.</span>
+        </div>
+        <div id="theses-result-list"></div>
+        <div class="color-legend" id="color-legend"></div>
+      </div>
+      <div class="voto-footer">Generated by <a href="https://voto.vote" target="_blank" rel="noopener">VOTO</a> on 2026-03-02</div></main>
+  </div>
+  <script>
+var THESES=[{"id":9,"position":1,"category":"Verkehr & Mobilität","title":"Verkehrswende","text":"Die Stadt sollte den Autoverkehr in der Innenstadt bis 2030 um die Hälfte reduzieren und stattdessen den ÖPNV und Radwege massiv ausbauen."},{"id":10,"position":2,"category":"Wohnen & Bauen","title":"Bezahlbares Wohnen","text":"Die Gemeinde sollte mindestens 30% aller Neubauflächen für sozialen Wohnungsbau reservieren."},{"id":11,"position":3,"category":"Umwelt & Klima","title":"Klimaneutralität","text":"Die Stadt sollte bis 2035 klimaneutral werden und dafür ein verbindliches CO₂-Budget einführen."},{"id":12,"position":4,"category":"Digitalisierung","title":"Digitale Verwaltung","text":"Alle Verwaltungsdienstleistungen sollen bis 2028 vollständig digital verfügbar sein."},{"id":13,"position":5,"category":"Bildung & Familie","title":"Kitaplätze","text":"Es soll ein Rechtsanspruch auf einen Kitaplatz ab dem ersten Lebensjahr mit maximal 15 Minuten Anfahrtszeit eingeführt werden."},{"id":14,"position":6,"category":"Wirtschaft & Finanzen","title":"Gewerbesteuer","text":"Die Gewerbesteuer sollte gesenkt werden, um mehr Unternehmen in die Stadt zu locken."},{"id":15,"position":7,"category":"Demokratie & Teilhabe","title":"Bürgerbeteiligung","text":"Bei allen Bauprojekten über 5 Millionen Euro sollte ein verpflichtender Bürgerentscheid durchgeführt werden."},{"id":16,"position":8,"category":"Sicherheit & Ordnung","title":"Sicherheit","text":"Die Anzahl der Ordnungskräfte im Stadtgebiet sollte verdoppelt und eine Videoüberwachung an öffentlichen Plätzen eingeführt werden."},{"id":17,"position":9,"category":"Kultur & Freizeit","title":"Kulturförderung","text":"Der städtische Kulturetat sollte um 50% erhöht werden, insbesondere für freie Kulturschaffende und Jugendprojekte."},{"id":18,"position":10,"category":"Energie","title":"Energieversorgung","text":"Die Stadtwerke sollen bis 2030 zu 100% auf erneuerbare Energien umstellen und Bürgerbeteiligungsmodelle für Solaranlagen anbieten."}];
+var PARTIES=[{"id":4,"shortName":"SPM","detailedName":"Sozialdemokratische Partei Musterstadt","description":"Die SPM steht für soziale Gerechtigkeit, bezahlbares Wohnen und einen starken öffentlichen Dienst. Wir setzen uns für eine solidarische Stadtgesellschaft ein, in der niemand zurückgelassen wird.","website":"https://spm-musterstadt.example.de","color":"#E3000F","logoUrl":null,"answers":[{"thesisId":9,"value":1,"reason":"Wir unterstützen die Verkehrswende voll — der ÖPNV muss Vorrang haben."},{"thesisId":10,"value":1,"reason":"Bezahlbares Wohnen ist unser Kernthema. 30% sind das Minimum."},{"thesisId":11,"value":1,"reason":null},{"thesisId":12,"value":1,"reason":"Digitalisierung der Verwaltung ist überfällig."},{"thesisId":13,"value":1,"reason":"Jedes Kind verdient einen Kitaplatz in der Nähe."},{"thesisId":14,"value":3,"reason":"Eine Gewerbesteuersenkung geht zu Lasten der sozialen Infrastruktur."},{"thesisId":15,"value":1,"reason":null},{"thesisId":16,"value":2,"reason":"Sicherheit ja, aber nicht durch flächendeckende Überwachung."},{"thesisId":17,"value":1,"reason":"Kultur ist kein Luxus, sondern Grundbedarf."},{"thesisId":18,"value":1,"reason":null}]},{"id":5,"shortName":"Grüne","detailedName":"Bündnis 90/Die Grünen Musterstadt","description":"Für uns stehen Klimaschutz, nachhaltige Mobilität und der Erhalt unserer Grünflächen im Mittelpunkt. Wir wollen Musterstadt zur Vorzeigestadt in Sachen Nachhaltigkeit machen.","website":"https://gruene-musterstadt.example.de","color":"#46962B","logoUrl":null,"answers":[{"thesisId":9,"value":1,"reason":"Die Verkehrswende ist das zentrale Element für Klimaschutz in der Stadt."},{"thesisId":10,"value":1,"reason":null},{"thesisId":11,"value":1,"reason":"Klimaneutralität bis 2035 ist ambitioniert aber machbar und notwendig."},{"thesisId":12,"value":1,"reason":null},{"thesisId":13,"value":1,"reason":null},{"thesisId":14,"value":3,"reason":"Steuersenkungen dürfen nicht auf Kosten des Klimaschutzes gehen."},{"thesisId":15,"value":1,"reason":"Demokratische Teilhabe stärkt den Zusammenhalt."},{"thesisId":16,"value":3,"reason":"Videoüberwachung schafft keine echte Sicherheit, sondern Scheinlösungen."},{"thesisId":17,"value":1,"reason":null},{"thesisId":18,"value":1,"reason":"100% Erneuerbare bei den Stadtwerken — dafür kämpfen wir seit Jahren."}]},{"id":6,"shortName":"CDM","detailedName":"Christlich Demokratische Mitte Musterstadt","description":"Wirtschaftliche Vernunft, Sicherheit und Zusammenhalt — die CDM steht für bewährte Werte und eine verlässliche Kommunalpolitik. Wir fördern Eigenverantwortung und starke Familien.","website":"https://cdm-musterstadt.example.de","color":"#000000","logoUrl":null,"answers":[{"thesisId":9,"value":3,"reason":"Die Halbierung des Autoverkehrs ist unrealistisch und wirtschaftsfeindlich."},{"thesisId":10,"value":2,"reason":"Sozialer Wohnungsbau ja, aber nicht auf Kosten des freien Marktes."},{"thesisId":11,"value":2,"reason":null},{"thesisId":12,"value":1,"reason":"Digitalisierung spart Kosten und schafft Effizienz."},{"thesisId":13,"value":2,"reason":null},{"thesisId":14,"value":1,"reason":"Niedrige Gewerbesteuer bringt Arbeitsplätze und Wohlstand."},{"thesisId":15,"value":3,"reason":"Verpflichtende Bürgerentscheide verzögern wichtige Projekte."},{"thesisId":16,"value":1,"reason":"Sicherheit ist die Grundlage für eine lebenswerte Stadt."},{"thesisId":17,"value":2,"reason":null},{"thesisId":18,"value":2,"reason":"Erneuerbare Energien ja, aber ohne ideologische Eile."}]},{"id":7,"shortName":"FWM","detailedName":"Freie Wähler Musterstadt","description":"Wir sind unabhängig von Bundes- und Landesparteien und entscheiden ausschließlich im Interesse der Bürgerinnen und Bürger Musterstadts. Pragmatisch statt ideologisch.","website":"https://fwm-musterstadt.example.de","color":"#FF8800","logoUrl":null,"answers":[{"thesisId":9,"value":2,"reason":"ÖPNV-Ausbau ja, aber Autoverkehr-Reduktion ist nicht überall umsetzbar."},{"thesisId":10,"value":1,"reason":null},{"thesisId":11,"value":2,"reason":null},{"thesisId":12,"value":1,"reason":"Digitale Verwaltung spart Zeit für Bürger und Mitarbeiter."},{"thesisId":13,"value":1,"reason":null},{"thesisId":14,"value":1,"reason":null},{"thesisId":15,"value":1,"reason":"Bürgerbeteiligung liegt in unserer DNA als Freie Wähler."},{"thesisId":16,"value":2,"reason":null},{"thesisId":17,"value":1,"reason":"Lokale Kultur und Vereine sind das Herz unserer Stadt."},{"thesisId":18,"value":1,"reason":null}]},{"id":8,"shortName":"Linke","detailedName":"Die Linke Musterstadt","description":"Bezahlbare Mieten, kostenloser ÖPNV und eine gerechte Verteilung — wir kämpfen für die Interessen der Vielen, nicht der Wenigen.","website":"https://linke-musterstadt.example.de","color":"#BE3075","logoUrl":null,"answers":[{"thesisId":9,"value":1,"reason":"ÖPNV muss kostenlos werden — die Verkehrswende geht uns nicht weit genug!"},{"thesisId":10,"value":1,"reason":"30% ist das Minimum. Wir fordern 50% sozialen Wohnungsbau."},{"thesisId":11,"value":1,"reason":null},{"thesisId":12,"value":2,"reason":"Digitalisierung darf nicht dazu führen, dass Menschen ohne Internet abgehängt werden."},{"thesisId":13,"value":1,"reason":null},{"thesisId":14,"value":3,"reason":"Steuersenkungen verschärfen die Ungleichheit."},{"thesisId":15,"value":1,"reason":null},{"thesisId":16,"value":3,"reason":"Mehr Überwachung löst keine sozialen Probleme."},{"thesisId":17,"value":1,"reason":"Kultur für alle — unabhängig vom Geldbeutel."},{"thesisId":18,"value":1,"reason":null}]},{"id":9,"shortName":"FDP-M","detailedName":"Freie Demokraten Musterstadt","description":"Freiheit, Innovation und Unternehmertum sind unser Antrieb. Wir setzen auf Digitalisierung, weniger Bürokratie und einen schlanken Staat auf kommunaler Ebene.","website":"https://fdp-musterstadt.example.de","color":"#FFED00","logoUrl":null,"answers":[{"thesisId":9,"value":3,"reason":"Individuelle Mobilität muss erhalten bleiben. Verbote sind der falsche Weg."},{"thesisId":10,"value":3,"reason":"Quoten verzerren den Markt. Besser: Anreize für private Investoren."},{"thesisId":11,"value":2,"reason":null},{"thesisId":12,"value":1,"reason":"Digitalisierung ist unser Topthema — Musterstadt soll zur Smart City werden."},{"thesisId":13,"value":2,"reason":null},{"thesisId":14,"value":1,"reason":"Wettbewerbsfähige Steuersätze sind das A und O für wirtschaftliches Wachstum."},{"thesisId":15,"value":2,"reason":"Bürgerbeteiligung ist gut, darf aber Projekte nicht blockieren."},{"thesisId":16,"value":2,"reason":null},{"thesisId":17,"value":3,"reason":"Kulturförderung sollte sich stärker am Markt orientieren."},{"thesisId":18,"value":2,"reason":null}]}];
+var CANDIDATES=[{"id":2,"firstName":"Maria","lastName":"Schneider","description":"Stadträtin seit 2018, Schwerpunkt Sozialpolitik und Bildung. Ehrenamtlich aktiv im Kinderschutzbund.","website":null,"partyShortName":"SPM","partyColor":"#E3000F","profilePictureUrl":null,"district":null,"listPlace":null,"answers":[]},{"id":3,"firstName":"Thomas","lastName":"Weber","description":"Gewerkschaftssekretär und langjähriger Kommunalpolitiker. Setzt sich für Arbeitnehmerrechte ein.","website":null,"partyShortName":"SPM","partyColor":"#E3000F","profilePictureUrl":null,"district":null,"listPlace":null,"answers":[]},{"id":4,"firstName":"Fatima","lastName":"Yilmaz","description":"Sozialarbeiterin und Integrationsbeauftragte. Engagiert sich für Vielfalt und Teilhabe.","website":null,"partyShortName":"SPM","partyColor":"#E3000F","profilePictureUrl":null,"district":null,"listPlace":null,"answers":[]},{"id":5,"firstName":"Klaus","lastName":"Hartmann","description":"Pensionierter Lehrer, setzt sich für bessere Schulen und Kitaplätze ein.","website":null,"partyShortName":"SPM","partyColor":"#E3000F","profilePictureUrl":null,"district":null,"listPlace":null,"answers":[]},{"id":6,"firstName":"Lisa","lastName":"Bergmann","description":"Umweltingenieurin und Gründerin einer lokalen Nachhaltigkeitsinitiative. Kämpft für die Verkehrswende.","website":null,"partyShortName":"Grüne","partyColor":"#46962B","profilePictureUrl":null,"district":null,"listPlace":null,"answers":[]},{"id":7,"firstName":"Jonas","lastName":"Stein","description":"Student der Stadtplanung, aktiv bei Fridays for Future. Jüngster Kandidat auf der Liste.","website":null,"partyShortName":"Grüne","partyColor":"#46962B","profilePictureUrl":null,"district":null,"listPlace":null,"answers":[]},{"id":8,"firstName":"Dr. Eva","lastName":"Richter","description":"Biologin am Naturkundemuseum, Expertin für urbane Biodiversität und Grünflächenplanung.","website":null,"partyShortName":"Grüne","partyColor":"#46962B","profilePictureUrl":null,"district":null,"listPlace":null,"answers":[]},{"id":9,"firstName":"Dr. Markus","lastName":"Hoffmann","description":"Rechtsanwalt und Fraktionsvorsitzender. Setzt auf Wirtschaftsförderung und Sicherheit.","website":null,"partyShortName":"CDM","partyColor":"#000000","profilePictureUrl":null,"district":null,"listPlace":null,"answers":[]},{"id":10,"firstName":"Sabine","lastName":"Krause","description":"Unternehmerin im Einzelhandel, engagiert sich für die Belebung der Innenstadt.","website":null,"partyShortName":"CDM","partyColor":"#000000","profilePictureUrl":null,"district":null,"listPlace":null,"answers":[]},{"id":11,"firstName":"Peter","lastName":"Meier","description":"Hauptkommissar a.D., Schwerpunkt öffentliche Sicherheit und Ordnung.","website":null,"partyShortName":"CDM","partyColor":"#000000","profilePictureUrl":null,"district":null,"listPlace":null,"answers":[]},{"id":12,"firstName":"Christina","lastName":"Bauer","description":"Architektin mit Erfahrung in Stadtentwicklung und nachhaltiger Bauplanung.","website":null,"partyShortName":"CDM","partyColor":"#000000","profilePictureUrl":null,"district":null,"listPlace":null,"answers":[]},{"id":13,"firstName":"Hans-Peter","lastName":"Gruber","description":"Landwirt und Gemeinderat, vertritt die Interessen der ländlichen Ortsteile.","website":null,"partyShortName":"FWM","partyColor":"#FF8800","profilePictureUrl":null,"district":null,"listPlace":null,"answers":[]},{"id":14,"firstName":"Karin","lastName":"Müller","description":"Buchhändlerin und aktives Mitglied im Kulturverein. Setzt auf Bürgernähe.","website":null,"partyShortName":"FWM","partyColor":"#FF8800","profilePictureUrl":null,"district":null,"listPlace":null,"answers":[]},{"id":15,"firstName":"Stefan","lastName":"Lang","description":"Handwerksmeister, ehrenamtlicher Feuerwehrmann, kennt die Probleme vor Ort.","website":null,"partyShortName":"FWM","partyColor":"#FF8800","profilePictureUrl":null,"district":null,"listPlace":null,"answers":[]},{"id":16,"firstName":"Nadine","lastName":"Wolf","description":"Krankenpflegerin und Betriebsrätin. Kämpft für bessere Arbeitsbedingungen im Gesundheitswesen.","website":null,"partyShortName":"Linke","partyColor":"#BE3075","profilePictureUrl":null,"district":null,"listPlace":null,"answers":[]},{"id":17,"firstName":"Ali","lastName":"Hassan","description":"Sozialpädagoge und Jugendarbeiter, setzt sich für Chancengleichheit ein.","website":null,"partyShortName":"Linke","partyColor":"#BE3075","profilePictureUrl":null,"district":null,"listPlace":null,"answers":[]},{"id":18,"firstName":"Greta","lastName":"Fischer","description":"Studentin der Politikwissenschaft, aktiv in der Mietenbewegung.","website":null,"partyShortName":"Linke","partyColor":"#BE3075","profilePictureUrl":null,"district":null,"listPlace":null,"answers":[]},{"id":19,"firstName":"Dr. Alexander","lastName":"Braun","description":"IT-Unternehmer und Gründer eines lokalen Start-up-Hubs. Treibt Digitalisierung voran.","website":null,"partyShortName":"FDP-M","partyColor":"#FFED00","profilePictureUrl":null,"district":null,"listPlace":null,"answers":[]},{"id":20,"firstName":"Julia","lastName":"Neumann","description":"Steuerberaterin, möchte Bürokratie abbauen und den Wirtschaftsstandort stärken.","website":null,"partyShortName":"FDP-M","partyColor":"#FFED00","profilePictureUrl":null,"district":null,"listPlace":null,"answers":[]}];
+var MATRIX=[[1,0.5,0,-0.5,-1],[0.5,0.75,0.25,-0.25,-0.5],[0,0.25,0.5,0.25,0],[-0.5,-0.25,0.25,0.75,0.5],[-1,-0.5,0,0.5,1]];
+var DECISIONS=5;
+var MATCH_TYPE='candidates-and-parties';
+var SHOW_PARTIES=true;
+var SHOW_CANDIDATES=true;
+var DIVIDER=100/(MATRIX.length-1);
+
+var currentThesis=0;
+var userRatings={};
+
+function showView(id){
+  document.querySelectorAll('.view').forEach(function(v){v.classList.remove('active')});
+  document.getElementById('view-'+id).classList.add('active');
+  window.scrollTo(0,0);
+}
+
+function startTheses(){showView('theses');showThesis(0)}
+
+function showThesis(idx){
+  currentThesis=idx;
+  var cards=document.querySelectorAll('#thesis-carousel .thesis-card');
+  cards.forEach(function(c,i){
+    c.style.display=i===idx?'flex':'none';
+    if(i===idx){c.classList.add('animate-in');setTimeout(function(){c.classList.remove('animate-in')},400)}
+  });
+  document.getElementById('thesis-counter').textContent=(idx+1)+' / '+THESES.length;
+
+  document.querySelectorAll('.progress-dot').forEach(function(d,i){
+    d.className='progress-dot';
+    var tid=THESES[i].id;
+    if(i===idx)d.classList.add('current');
+    else if(userRatings[tid]&&userRatings[tid].rating===-1)d.classList.add('skipped');
+    else if(userRatings[tid]&&userRatings[tid].rating!==undefined)d.classList.add('answered');
+  });
+
+  document.getElementById('btn-prev').disabled=idx===0;
+  var isLast=idx===THESES.length-1;
+  document.getElementById('btn-next').style.display=isLast?'none':'inline-block';
+  document.getElementById('btn-finish').style.display=isLast?'inline-block':'none';
+
+  var card=cards[idx];var tid=THESES[idx].id;
+  card.querySelectorAll('.rating-btn').forEach(function(b){
+    b.classList.remove('active');
+    if(userRatings[tid]&&userRatings[tid].rating!==undefined&&userRatings[tid].rating!==-1){
+      var dec=Math.round((userRatings[tid].rating/100)*(DECISIONS-1)+1);
+      if(parseInt(b.dataset.value)===dec)b.classList.add('active');
+    }
+  });
+}
+
+function rateThesis(thesisId,value,btn){
+  var rating=Math.max(0,Math.min(100,((value-1)/(DECISIONS-1))*100));
+  userRatings[thesisId]={rating:rating};
+  btn.parentElement.querySelectorAll('.rating-btn').forEach(function(b){b.classList.remove('active')});
+  btn.classList.add('active');
+  setTimeout(function(){if(currentThesis<THESES.length-1)nextThesis()},300);
+}
+
+function skipThesis(){
+  userRatings[THESES[currentThesis].id]={rating:-1};
+  if(currentThesis<THESES.length-1)nextThesis();else showResults();
+}
+
+function nextThesis(){if(currentThesis<THESES.length-1)showThesis(currentThesis+1)}
+function prevThesis(){if(currentThesis>0)showThesis(currentThesis-1)}
+
+/* ── Result calculation ── */
+function getMinMax(m){var f=m.reduce(function(a,r){return a.concat(r)},[]);return{min:Math.min.apply(null,f),max:Math.max.apply(null,f)}}
+
+function calcMatch(answers){
+  var mm=getMinMax(MATRIX);var maxPts=0,minPts=0,pts=0;
+  for(var key in userRatings){
+    var ur=userRatings[key];
+    if(ur.rating===-1||ur.rating===undefined)continue;
+    var ea=null;
+    for(var i=0;i<answers.length;i++){if(String(answers[i].thesisId)===String(key)){ea=answers[i];break}}
+    if(!ea)continue;
+    var userIdx=Math.round(ur.rating/DIVIDER);
+    var eaRating=Math.max(0,Math.min(100,((ea.value-1)/(DECISIONS-1))*100));
+    var entityIdx=Math.round(eaRating/DIVIDER);
+    maxPts+=mm.max;minPts+=mm.min;
+    pts+=MATRIX[entityIdx][userIdx];
+  }
+  maxPts+=Math.abs(minPts);pts+=Math.abs(minPts);
+  return maxPts===0?0:Math.round((pts/maxPts)*1000)/10;
+}
+
+function isLightColor(hex){
+  if(!hex||!hex.startsWith('#'))return false;
+  var r=parseInt(hex.slice(1,3),16)/255,g=parseInt(hex.slice(3,5),16)/255,b=parseInt(hex.slice(5,7),16)/255;
+  r=r<=.03928?r/12.92:Math.pow((r+.055)/1.055,2.4);
+  g=g<=.03928?g/12.92:Math.pow((g+.055)/1.055,2.4);
+  b=b<=.03928?b/12.92:Math.pow((b+.055)/1.055,2.4);
+  return(.2126*r+.7152*g+.0722*b)>.5;
+}
+
+function showResults(){
+  showView('result');
+  var cnt=0;for(var k in userRatings){if(userRatings[k].rating!==undefined&&userRatings[k].rating!==-1)cnt++}
+  document.getElementById('result-explanation').textContent='Your result based on '+cnt+' answered '+(cnt===1?'thesis':'theses')+':';
+  renderEntityList('candidates');renderEntityList('parties');renderThesesResult();
+}
+
+function renderEntityList(type){
+  var entities=type==='candidates'?CANDIDATES:PARTIES;
+  var container=document.getElementById('entity-list-'+type);
+  if(!container)return;
+  var results=entities.map(function(e){return{entity:e,match:calcMatch(e.answers),type:type}}).sort(function(a,b){return b.match-a.match});
+
+  container.innerHTML=results.map(function(r){
+    var name=r.type==='candidates'?r.entity.firstName+' '+r.entity.lastName:r.entity.shortName;
+    var color=r.type==='candidates'?(r.entity.partyColor||'var(--primary)'):(r.entity.color||'var(--primary)');
+    var meta=[];
+    if(r.type==='candidates'){
+      if(r.entity.partyShortName)meta.push(r.entity.partyShortName);
+      if(r.entity.district)meta.push(r.entity.district);
+      if(r.entity.listPlace)meta.push('#'+r.entity.listPlace);
+    }else{
+      if(r.entity.detailedName&&r.entity.detailedName!==r.entity.shortName)meta.push(r.entity.detailedName);
+    }
+    var light=isLightColor(color);var fg=light?'#18181b':'#fafafa';
+    var avatar='';
+    if(r.type==='candidates'&&r.entity.profilePictureUrl){
+      avatar='<img class="entity-avatar" src="'+r.entity.profilePictureUrl.replace(/"/g,'&quot;')+'" alt="'+name.replace(/"/g,'&quot;')+'" onerror="this.style.display=\'none\'"/>';
+    }
+    return '<div class="entity-row">'+avatar+
+      '<div class="entity-info"><div class="entity-name">'+name+'</div>'+
+      (meta.length?'<div class="entity-meta">'+meta.join(' | ')+'</div>':'')+
+      '<div class="match-bar-wrapper"><div class="match-bar-track">'+
+        '<div class="match-bar-bg" style="background:'+color+'"></div>'+
+        '<div class="match-bar-fill" style="width:'+r.match+'%;background:'+color+'"></div></div>'+
+        '<div class="match-bar-text" style="'+(r.match>=10?'right:'+(100-r.match)+'%;color:'+fg:'left:'+(r.match+1)+'%;color:var(--text)')+'">'+r.match+'%</div></div></div></div>';
+  }).join('');
+}
+
+/* ── Theses result ── */
+function renderThesesResult(){
+  var container=document.getElementById('theses-result-list');
+  var legendContainer=document.getElementById('color-legend');
+  var entities=[];
+  if(SHOW_PARTIES)PARTIES.forEach(function(p){entities.push({id:p.id,type:'party',name:p.shortName,color:p.color||'var(--primary)',answers:p.answers})});
+  if(SHOW_CANDIDATES)CANDIDATES.forEach(function(c){entities.push({id:c.id,type:'candidate',name:c.firstName.charAt(0)+'. '+c.lastName,color:c.partyColor||'var(--primary)',answers:c.answers})});
+
+  legendContainer.innerHTML=entities.map(function(e){return '<div class="legend-item"><div class="legend-swatch" style="background:'+e.color+'"></div><span>'+e.name+'</span></div>'}).join('');
+
+  container.innerHTML=THESES.map(function(t,ti){
+    var ur=userRatings[t.id];
+    var userDec=undefined;
+    if(ur&&ur.rating!==undefined&&ur.rating!==-1)userDec=Math.round((ur.rating/100)*(DECISIONS-1)+1);
+
+    var rows='';
+    rows+='<div class="rating-label" style="text-transform:uppercase;font-weight:500">Me</div>';
+    rows+=renderSquares(userDec,'var(--primary)','var(--primary-fg)',ur?ur.rating:undefined);
+    rows+='<div class="rating-action"></div>';
+
+    entities.forEach(function(e){
+      var ea=null;
+      for(var i=0;i<e.answers.length;i++){if(String(e.answers[i].thesisId)===String(t.id)){ea=e.answers[i];break}}
+      var eDec=ea?ea.value:undefined;
+      var eRat=ea?Math.max(0,Math.min(100,((ea.value-1)/(DECISIONS-1))*100)):undefined;
+      var light=isLightColor(e.color);var fg=light?'#18181b':'#fafafa';
+
+      rows+='<div class="rating-label"><span class="rating-label-colored" style="background:'+e.color+';color:'+fg+'">'+e.name+'</span></div>';
+      rows+=renderSquares(eDec,e.color,fg,eRat);
+
+      if(ea&&ea.reason){
+        rows+='<div class="rating-action"><button class="explanation-toggle" onclick="toggleExplanation(this)">Details &#9662;</button></div>';
+        rows+='<div class="explanation-text" style="background:'+e.color+';color:'+fg+'">'+ea.reason+'</div>';
+      }else{
+        rows+='<div class="rating-action"></div>';
+      }
+    });
+
+    return '<div class="thesis-result-card animate-in">'+
+      '<div class="thesis-result-top"><span>'+(t.category||'')+'</span><span>'+(ti+1)+' / '+THESES.length+'</span></div>'+
+      '<div class="thesis-result-text">'+t.text+'</div>'+
+      '<div class="rating-grid">'+rows+'</div></div>';
+  }).join('');
+}
+
+function renderSquares(decision,bg,fg,rating){
+  if(rating===-1||rating===undefined){
+    return '<div class="rating-squares"><div class="rating-square" style="background:'+(rating===-1?bg:'#d4d4d8')+';color:'+(rating===-1?fg:'#71717a')+'">-</div></div>';
+  }
+  var h='<div class="rating-squares">';
+  for(var i=1;i<=DECISIONS;i++){
+    var cur=i===decision;
+    h+='<div class="rating-square" style="background:'+(cur?bg:'#e4e4e7')+';color:'+(cur?fg:'transparent')+'">'+(cur?decision:'')+'</div>';
+  }
+  return h+'</div>';
+}
+
+function toggleExplanation(btn){
+  var expl=btn.parentElement.nextElementSibling;
+  if(expl&&expl.classList.contains('explanation-text')){
+    expl.classList.toggle('open');
+    btn.innerHTML=expl.classList.contains('open')?'Details &#9652;':'Details &#9662;';
+  }
+}
+
+function switchResultTab(tab){
+  document.querySelectorAll('.result-tab').forEach(function(t){t.classList.toggle('active',t.dataset.tab===tab)});
+  document.getElementById('result-tab-result').style.display=tab==='result'?'block':'none';
+  document.getElementById('result-tab-theses').style.display=tab==='theses'?'block':'none';
+}
+
+function switchSubTab(tab){
+  document.querySelectorAll('.sub-tab').forEach(function(t){t.classList.toggle('active',t.dataset.subtab===tab)});
+  document.getElementById('entity-list-candidates').style.display=tab==='candidates'?'block':'none';
+  document.getElementById('entity-list-parties').style.display=tab==='parties'?'block':'none';
+}
+  </script>
+</body>
+</html>

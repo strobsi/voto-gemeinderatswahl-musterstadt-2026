@@ -1,0 +1,763 @@
+{
+  "election": {
+    "id": 1003,
+    "name": "Gemeinderatswahl Musterstadt 2026",
+    "subtitle": "",
+    "date": "2026-02-01",
+    "location": "Musterstadt",
+    "type": "hybrid",
+    "description": "",
+    "coverImageUrl": null
+  },
+  "config": {
+    "primaryColor": "#db1fc2",
+    "secondaryColor": "#120a19",
+    "logoUrl": null,
+    "algorithmDecisions": 5,
+    "algorithmMatchType": "candidates-and-parties",
+    "algorithmMatrix": [
+      [
+        1,
+        0.5,
+        0,
+        -0.5,
+        -1
+      ],
+      [
+        0.5,
+        0.75,
+        0.25,
+        -0.25,
+        -0.5
+      ],
+      [
+        0,
+        0.25,
+        0.5,
+        0.25,
+        0
+      ],
+      [
+        -0.5,
+        -0.25,
+        0.25,
+        0.75,
+        0.5
+      ],
+      [
+        -1,
+        -0.5,
+        0,
+        0.5,
+        1
+      ]
+    ]
+  },
+  "theses": [
+    {
+      "id": 9,
+      "position": 1,
+      "category": "Verkehr & Mobilität",
+      "title": "Verkehrswende",
+      "text": "Die Stadt sollte den Autoverkehr in der Innenstadt bis 2030 um die Hälfte reduzieren und stattdessen den ÖPNV und Radwege massiv ausbauen."
+    },
+    {
+      "id": 10,
+      "position": 2,
+      "category": "Wohnen & Bauen",
+      "title": "Bezahlbares Wohnen",
+      "text": "Die Gemeinde sollte mindestens 30% aller Neubauflächen für sozialen Wohnungsbau reservieren."
+    },
+    {
+      "id": 11,
+      "position": 3,
+      "category": "Umwelt & Klima",
+      "title": "Klimaneutralität",
+      "text": "Die Stadt sollte bis 2035 klimaneutral werden und dafür ein verbindliches CO₂-Budget einführen."
+    },
+    {
+      "id": 12,
+      "position": 4,
+      "category": "Digitalisierung",
+      "title": "Digitale Verwaltung",
+      "text": "Alle Verwaltungsdienstleistungen sollen bis 2028 vollständig digital verfügbar sein."
+    },
+    {
+      "id": 13,
+      "position": 5,
+      "category": "Bildung & Familie",
+      "title": "Kitaplätze",
+      "text": "Es soll ein Rechtsanspruch auf einen Kitaplatz ab dem ersten Lebensjahr mit maximal 15 Minuten Anfahrtszeit eingeführt werden."
+    },
+    {
+      "id": 14,
+      "position": 6,
+      "category": "Wirtschaft & Finanzen",
+      "title": "Gewerbesteuer",
+      "text": "Die Gewerbesteuer sollte gesenkt werden, um mehr Unternehmen in die Stadt zu locken."
+    },
+    {
+      "id": 15,
+      "position": 7,
+      "category": "Demokratie & Teilhabe",
+      "title": "Bürgerbeteiligung",
+      "text": "Bei allen Bauprojekten über 5 Millionen Euro sollte ein verpflichtender Bürgerentscheid durchgeführt werden."
+    },
+    {
+      "id": 16,
+      "position": 8,
+      "category": "Sicherheit & Ordnung",
+      "title": "Sicherheit",
+      "text": "Die Anzahl der Ordnungskräfte im Stadtgebiet sollte verdoppelt und eine Videoüberwachung an öffentlichen Plätzen eingeführt werden."
+    },
+    {
+      "id": 17,
+      "position": 9,
+      "category": "Kultur & Freizeit",
+      "title": "Kulturförderung",
+      "text": "Der städtische Kulturetat sollte um 50% erhöht werden, insbesondere für freie Kulturschaffende und Jugendprojekte."
+    },
+    {
+      "id": 18,
+      "position": 10,
+      "category": "Energie",
+      "title": "Energieversorgung",
+      "text": "Die Stadtwerke sollen bis 2030 zu 100% auf erneuerbare Energien umstellen und Bürgerbeteiligungsmodelle für Solaranlagen anbieten."
+    }
+  ],
+  "parties": [
+    {
+      "id": 4,
+      "shortName": "SPM",
+      "detailedName": "Sozialdemokratische Partei Musterstadt",
+      "description": "Die SPM steht für soziale Gerechtigkeit, bezahlbares Wohnen und einen starken öffentlichen Dienst. Wir setzen uns für eine solidarische Stadtgesellschaft ein, in der niemand zurückgelassen wird.",
+      "website": "https://spm-musterstadt.example.de",
+      "color": "#E3000F",
+      "logoUrl": null,
+      "answers": [
+        {
+          "thesisId": 9,
+          "value": 1,
+          "reason": "Wir unterstützen die Verkehrswende voll — der ÖPNV muss Vorrang haben."
+        },
+        {
+          "thesisId": 10,
+          "value": 1,
+          "reason": "Bezahlbares Wohnen ist unser Kernthema. 30% sind das Minimum."
+        },
+        {
+          "thesisId": 11,
+          "value": 1,
+          "reason": null
+        },
+        {
+          "thesisId": 12,
+          "value": 1,
+          "reason": "Digitalisierung der Verwaltung ist überfällig."
+        },
+        {
+          "thesisId": 13,
+          "value": 1,
+          "reason": "Jedes Kind verdient einen Kitaplatz in der Nähe."
+        },
+        {
+          "thesisId": 14,
+          "value": 3,
+          "reason": "Eine Gewerbesteuersenkung geht zu Lasten der sozialen Infrastruktur."
+        },
+        {
+          "thesisId": 15,
+          "value": 1,
+          "reason": null
+        },
+        {
+          "thesisId": 16,
+          "value": 2,
+          "reason": "Sicherheit ja, aber nicht durch flächendeckende Überwachung."
+        },
+        {
+          "thesisId": 17,
+          "value": 1,
+          "reason": "Kultur ist kein Luxus, sondern Grundbedarf."
+        },
+        {
+          "thesisId": 18,
+          "value": 1,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "shortName": "Grüne",
+      "detailedName": "Bündnis 90/Die Grünen Musterstadt",
+      "description": "Für uns stehen Klimaschutz, nachhaltige Mobilität und der Erhalt unserer Grünflächen im Mittelpunkt. Wir wollen Musterstadt zur Vorzeigestadt in Sachen Nachhaltigkeit machen.",
+      "website": "https://gruene-musterstadt.example.de",
+      "color": "#46962B",
+      "logoUrl": null,
+      "answers": [
+        {
+          "thesisId": 9,
+          "value": 1,
+          "reason": "Die Verkehrswende ist das zentrale Element für Klimaschutz in der Stadt."
+        },
+        {
+          "thesisId": 10,
+          "value": 1,
+          "reason": null
+        },
+        {
+          "thesisId": 11,
+          "value": 1,
+          "reason": "Klimaneutralität bis 2035 ist ambitioniert aber machbar und notwendig."
+        },
+        {
+          "thesisId": 12,
+          "value": 1,
+          "reason": null
+        },
+        {
+          "thesisId": 13,
+          "value": 1,
+          "reason": null
+        },
+        {
+          "thesisId": 14,
+          "value": 3,
+          "reason": "Steuersenkungen dürfen nicht auf Kosten des Klimaschutzes gehen."
+        },
+        {
+          "thesisId": 15,
+          "value": 1,
+          "reason": "Demokratische Teilhabe stärkt den Zusammenhalt."
+        },
+        {
+          "thesisId": 16,
+          "value": 3,
+          "reason": "Videoüberwachung schafft keine echte Sicherheit, sondern Scheinlösungen."
+        },
+        {
+          "thesisId": 17,
+          "value": 1,
+          "reason": null
+        },
+        {
+          "thesisId": 18,
+          "value": 1,
+          "reason": "100% Erneuerbare bei den Stadtwerken — dafür kämpfen wir seit Jahren."
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "shortName": "CDM",
+      "detailedName": "Christlich Demokratische Mitte Musterstadt",
+      "description": "Wirtschaftliche Vernunft, Sicherheit und Zusammenhalt — die CDM steht für bewährte Werte und eine verlässliche Kommunalpolitik. Wir fördern Eigenverantwortung und starke Familien.",
+      "website": "https://cdm-musterstadt.example.de",
+      "color": "#000000",
+      "logoUrl": null,
+      "answers": [
+        {
+          "thesisId": 9,
+          "value": 3,
+          "reason": "Die Halbierung des Autoverkehrs ist unrealistisch und wirtschaftsfeindlich."
+        },
+        {
+          "thesisId": 10,
+          "value": 2,
+          "reason": "Sozialer Wohnungsbau ja, aber nicht auf Kosten des freien Marktes."
+        },
+        {
+          "thesisId": 11,
+          "value": 2,
+          "reason": null
+        },
+        {
+          "thesisId": 12,
+          "value": 1,
+          "reason": "Digitalisierung spart Kosten und schafft Effizienz."
+        },
+        {
+          "thesisId": 13,
+          "value": 2,
+          "reason": null
+        },
+        {
+          "thesisId": 14,
+          "value": 1,
+          "reason": "Niedrige Gewerbesteuer bringt Arbeitsplätze und Wohlstand."
+        },
+        {
+          "thesisId": 15,
+          "value": 3,
+          "reason": "Verpflichtende Bürgerentscheide verzögern wichtige Projekte."
+        },
+        {
+          "thesisId": 16,
+          "value": 1,
+          "reason": "Sicherheit ist die Grundlage für eine lebenswerte Stadt."
+        },
+        {
+          "thesisId": 17,
+          "value": 2,
+          "reason": null
+        },
+        {
+          "thesisId": 18,
+          "value": 2,
+          "reason": "Erneuerbare Energien ja, aber ohne ideologische Eile."
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "shortName": "FWM",
+      "detailedName": "Freie Wähler Musterstadt",
+      "description": "Wir sind unabhängig von Bundes- und Landesparteien und entscheiden ausschließlich im Interesse der Bürgerinnen und Bürger Musterstadts. Pragmatisch statt ideologisch.",
+      "website": "https://fwm-musterstadt.example.de",
+      "color": "#FF8800",
+      "logoUrl": null,
+      "answers": [
+        {
+          "thesisId": 9,
+          "value": 2,
+          "reason": "ÖPNV-Ausbau ja, aber Autoverkehr-Reduktion ist nicht überall umsetzbar."
+        },
+        {
+          "thesisId": 10,
+          "value": 1,
+          "reason": null
+        },
+        {
+          "thesisId": 11,
+          "value": 2,
+          "reason": null
+        },
+        {
+          "thesisId": 12,
+          "value": 1,
+          "reason": "Digitale Verwaltung spart Zeit für Bürger und Mitarbeiter."
+        },
+        {
+          "thesisId": 13,
+          "value": 1,
+          "reason": null
+        },
+        {
+          "thesisId": 14,
+          "value": 1,
+          "reason": null
+        },
+        {
+          "thesisId": 15,
+          "value": 1,
+          "reason": "Bürgerbeteiligung liegt in unserer DNA als Freie Wähler."
+        },
+        {
+          "thesisId": 16,
+          "value": 2,
+          "reason": null
+        },
+        {
+          "thesisId": 17,
+          "value": 1,
+          "reason": "Lokale Kultur und Vereine sind das Herz unserer Stadt."
+        },
+        {
+          "thesisId": 18,
+          "value": 1,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "shortName": "Linke",
+      "detailedName": "Die Linke Musterstadt",
+      "description": "Bezahlbare Mieten, kostenloser ÖPNV und eine gerechte Verteilung — wir kämpfen für die Interessen der Vielen, nicht der Wenigen.",
+      "website": "https://linke-musterstadt.example.de",
+      "color": "#BE3075",
+      "logoUrl": null,
+      "answers": [
+        {
+          "thesisId": 9,
+          "value": 1,
+          "reason": "ÖPNV muss kostenlos werden — die Verkehrswende geht uns nicht weit genug!"
+        },
+        {
+          "thesisId": 10,
+          "value": 1,
+          "reason": "30% ist das Minimum. Wir fordern 50% sozialen Wohnungsbau."
+        },
+        {
+          "thesisId": 11,
+          "value": 1,
+          "reason": null
+        },
+        {
+          "thesisId": 12,
+          "value": 2,
+          "reason": "Digitalisierung darf nicht dazu führen, dass Menschen ohne Internet abgehängt werden."
+        },
+        {
+          "thesisId": 13,
+          "value": 1,
+          "reason": null
+        },
+        {
+          "thesisId": 14,
+          "value": 3,
+          "reason": "Steuersenkungen verschärfen die Ungleichheit."
+        },
+        {
+          "thesisId": 15,
+          "value": 1,
+          "reason": null
+        },
+        {
+          "thesisId": 16,
+          "value": 3,
+          "reason": "Mehr Überwachung löst keine sozialen Probleme."
+        },
+        {
+          "thesisId": 17,
+          "value": 1,
+          "reason": "Kultur für alle — unabhängig vom Geldbeutel."
+        },
+        {
+          "thesisId": 18,
+          "value": 1,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "shortName": "FDP-M",
+      "detailedName": "Freie Demokraten Musterstadt",
+      "description": "Freiheit, Innovation und Unternehmertum sind unser Antrieb. Wir setzen auf Digitalisierung, weniger Bürokratie und einen schlanken Staat auf kommunaler Ebene.",
+      "website": "https://fdp-musterstadt.example.de",
+      "color": "#FFED00",
+      "logoUrl": null,
+      "answers": [
+        {
+          "thesisId": 9,
+          "value": 3,
+          "reason": "Individuelle Mobilität muss erhalten bleiben. Verbote sind der falsche Weg."
+        },
+        {
+          "thesisId": 10,
+          "value": 3,
+          "reason": "Quoten verzerren den Markt. Besser: Anreize für private Investoren."
+        },
+        {
+          "thesisId": 11,
+          "value": 2,
+          "reason": null
+        },
+        {
+          "thesisId": 12,
+          "value": 1,
+          "reason": "Digitalisierung ist unser Topthema — Musterstadt soll zur Smart City werden."
+        },
+        {
+          "thesisId": 13,
+          "value": 2,
+          "reason": null
+        },
+        {
+          "thesisId": 14,
+          "value": 1,
+          "reason": "Wettbewerbsfähige Steuersätze sind das A und O für wirtschaftliches Wachstum."
+        },
+        {
+          "thesisId": 15,
+          "value": 2,
+          "reason": "Bürgerbeteiligung ist gut, darf aber Projekte nicht blockieren."
+        },
+        {
+          "thesisId": 16,
+          "value": 2,
+          "reason": null
+        },
+        {
+          "thesisId": 17,
+          "value": 3,
+          "reason": "Kulturförderung sollte sich stärker am Markt orientieren."
+        },
+        {
+          "thesisId": 18,
+          "value": 2,
+          "reason": null
+        }
+      ]
+    }
+  ],
+  "candidates": [
+    {
+      "id": 2,
+      "firstName": "Maria",
+      "lastName": "Schneider",
+      "description": "Stadträtin seit 2018, Schwerpunkt Sozialpolitik und Bildung. Ehrenamtlich aktiv im Kinderschutzbund.",
+      "website": null,
+      "partyShortName": "SPM",
+      "partyColor": "#E3000F",
+      "profilePictureUrl": null,
+      "district": null,
+      "listPlace": null,
+      "answers": []
+    },
+    {
+      "id": 3,
+      "firstName": "Thomas",
+      "lastName": "Weber",
+      "description": "Gewerkschaftssekretär und langjähriger Kommunalpolitiker. Setzt sich für Arbeitnehmerrechte ein.",
+      "website": null,
+      "partyShortName": "SPM",
+      "partyColor": "#E3000F",
+      "profilePictureUrl": null,
+      "district": null,
+      "listPlace": null,
+      "answers": []
+    },
+    {
+      "id": 4,
+      "firstName": "Fatima",
+      "lastName": "Yilmaz",
+      "description": "Sozialarbeiterin und Integrationsbeauftragte. Engagiert sich für Vielfalt und Teilhabe.",
+      "website": null,
+      "partyShortName": "SPM",
+      "partyColor": "#E3000F",
+      "profilePictureUrl": null,
+      "district": null,
+      "listPlace": null,
+      "answers": []
+    },
+    {
+      "id": 5,
+      "firstName": "Klaus",
+      "lastName": "Hartmann",
+      "description": "Pensionierter Lehrer, setzt sich für bessere Schulen und Kitaplätze ein.",
+      "website": null,
+      "partyShortName": "SPM",
+      "partyColor": "#E3000F",
+      "profilePictureUrl": null,
+      "district": null,
+      "listPlace": null,
+      "answers": []
+    },
+    {
+      "id": 6,
+      "firstName": "Lisa",
+      "lastName": "Bergmann",
+      "description": "Umweltingenieurin und Gründerin einer lokalen Nachhaltigkeitsinitiative. Kämpft für die Verkehrswende.",
+      "website": null,
+      "partyShortName": "Grüne",
+      "partyColor": "#46962B",
+      "profilePictureUrl": null,
+      "district": null,
+      "listPlace": null,
+      "answers": []
+    },
+    {
+      "id": 7,
+      "firstName": "Jonas",
+      "lastName": "Stein",
+      "description": "Student der Stadtplanung, aktiv bei Fridays for Future. Jüngster Kandidat auf der Liste.",
+      "website": null,
+      "partyShortName": "Grüne",
+      "partyColor": "#46962B",
+      "profilePictureUrl": null,
+      "district": null,
+      "listPlace": null,
+      "answers": []
+    },
+    {
+      "id": 8,
+      "firstName": "Dr. Eva",
+      "lastName": "Richter",
+      "description": "Biologin am Naturkundemuseum, Expertin für urbane Biodiversität und Grünflächenplanung.",
+      "website": null,
+      "partyShortName": "Grüne",
+      "partyColor": "#46962B",
+      "profilePictureUrl": null,
+      "district": null,
+      "listPlace": null,
+      "answers": []
+    },
+    {
+      "id": 9,
+      "firstName": "Dr. Markus",
+      "lastName": "Hoffmann",
+      "description": "Rechtsanwalt und Fraktionsvorsitzender. Setzt auf Wirtschaftsförderung und Sicherheit.",
+      "website": null,
+      "partyShortName": "CDM",
+      "partyColor": "#000000",
+      "profilePictureUrl": null,
+      "district": null,
+      "listPlace": null,
+      "answers": []
+    },
+    {
+      "id": 10,
+      "firstName": "Sabine",
+      "lastName": "Krause",
+      "description": "Unternehmerin im Einzelhandel, engagiert sich für die Belebung der Innenstadt.",
+      "website": null,
+      "partyShortName": "CDM",
+      "partyColor": "#000000",
+      "profilePictureUrl": null,
+      "district": null,
+      "listPlace": null,
+      "answers": []
+    },
+    {
+      "id": 11,
+      "firstName": "Peter",
+      "lastName": "Meier",
+      "description": "Hauptkommissar a.D., Schwerpunkt öffentliche Sicherheit und Ordnung.",
+      "website": null,
+      "partyShortName": "CDM",
+      "partyColor": "#000000",
+      "profilePictureUrl": null,
+      "district": null,
+      "listPlace": null,
+      "answers": []
+    },
+    {
+      "id": 12,
+      "firstName": "Christina",
+      "lastName": "Bauer",
+      "description": "Architektin mit Erfahrung in Stadtentwicklung und nachhaltiger Bauplanung.",
+      "website": null,
+      "partyShortName": "CDM",
+      "partyColor": "#000000",
+      "profilePictureUrl": null,
+      "district": null,
+      "listPlace": null,
+      "answers": []
+    },
+    {
+      "id": 13,
+      "firstName": "Hans-Peter",
+      "lastName": "Gruber",
+      "description": "Landwirt und Gemeinderat, vertritt die Interessen der ländlichen Ortsteile.",
+      "website": null,
+      "partyShortName": "FWM",
+      "partyColor": "#FF8800",
+      "profilePictureUrl": null,
+      "district": null,
+      "listPlace": null,
+      "answers": []
+    },
+    {
+      "id": 14,
+      "firstName": "Karin",
+      "lastName": "Müller",
+      "description": "Buchhändlerin und aktives Mitglied im Kulturverein. Setzt auf Bürgernähe.",
+      "website": null,
+      "partyShortName": "FWM",
+      "partyColor": "#FF8800",
+      "profilePictureUrl": null,
+      "district": null,
+      "listPlace": null,
+      "answers": []
+    },
+    {
+      "id": 15,
+      "firstName": "Stefan",
+      "lastName": "Lang",
+      "description": "Handwerksmeister, ehrenamtlicher Feuerwehrmann, kennt die Probleme vor Ort.",
+      "website": null,
+      "partyShortName": "FWM",
+      "partyColor": "#FF8800",
+      "profilePictureUrl": null,
+      "district": null,
+      "listPlace": null,
+      "answers": []
+    },
+    {
+      "id": 16,
+      "firstName": "Nadine",
+      "lastName": "Wolf",
+      "description": "Krankenpflegerin und Betriebsrätin. Kämpft für bessere Arbeitsbedingungen im Gesundheitswesen.",
+      "website": null,
+      "partyShortName": "Linke",
+      "partyColor": "#BE3075",
+      "profilePictureUrl": null,
+      "district": null,
+      "listPlace": null,
+      "answers": []
+    },
+    {
+      "id": 17,
+      "firstName": "Ali",
+      "lastName": "Hassan",
+      "description": "Sozialpädagoge und Jugendarbeiter, setzt sich für Chancengleichheit ein.",
+      "website": null,
+      "partyShortName": "Linke",
+      "partyColor": "#BE3075",
+      "profilePictureUrl": null,
+      "district": null,
+      "listPlace": null,
+      "answers": []
+    },
+    {
+      "id": 18,
+      "firstName": "Greta",
+      "lastName": "Fischer",
+      "description": "Studentin der Politikwissenschaft, aktiv in der Mietenbewegung.",
+      "website": null,
+      "partyShortName": "Linke",
+      "partyColor": "#BE3075",
+      "profilePictureUrl": null,
+      "district": null,
+      "listPlace": null,
+      "answers": []
+    },
+    {
+      "id": 19,
+      "firstName": "Dr. Alexander",
+      "lastName": "Braun",
+      "description": "IT-Unternehmer und Gründer eines lokalen Start-up-Hubs. Treibt Digitalisierung voran.",
+      "website": null,
+      "partyShortName": "FDP-M",
+      "partyColor": "#FFED00",
+      "profilePictureUrl": null,
+      "district": null,
+      "listPlace": null,
+      "answers": []
+    },
+    {
+      "id": 20,
+      "firstName": "Julia",
+      "lastName": "Neumann",
+      "description": "Steuerberaterin, möchte Bürokratie abbauen und den Wirtschaftsstandort stärken.",
+      "website": null,
+      "partyShortName": "FDP-M",
+      "partyColor": "#FFED00",
+      "profilePictureUrl": null,
+      "district": null,
+      "listPlace": null,
+      "answers": []
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Sparkasse Musterstadt",
+      "url": "https://sparkasse-musterstadt.example.de",
+      "logoUrl": null
+    },
+    {
+      "name": "Stadtwerke Musterstadt",
+      "url": "https://stadtwerke-musterstadt.example.de",
+      "logoUrl": null
+    },
+    {
+      "name": "Musterstadt Kurier",
+      "url": "https://musterstadt-kurier.example.de",
+      "logoUrl": null
+    }
+  ],
+  "generatedAt": "2026-03-02"
+}
